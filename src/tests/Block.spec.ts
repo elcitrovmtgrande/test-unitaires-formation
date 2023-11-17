@@ -1,5 +1,8 @@
+import { Block } from '../class/Block';
+
 describe('Block', () => {
   it('should be a Block', () => {
-    expect('Block').toBe('Block');
+    const block = new Block();
+    expect(block).toBeInstanceOf(Block);
   });
 });
