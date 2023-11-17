@@ -3,7 +3,7 @@
 ![Blockchain](./blockchain.png)
 
 ### Contexte
-Réalisation d'une blockchain en locale avec des tests unitaires.
+Réalisation d'une blockchain en local avec des tests unitaires.
 
 ### Blockchain
 Une blockchain est un ensemble de blocs qui contiennent des informations. La blockchain est une technologie de stockage et de transmission d’informations, transparente, sécurisée, et fonctionnant sans organe central de contrôle (définition de Blockchain France).
