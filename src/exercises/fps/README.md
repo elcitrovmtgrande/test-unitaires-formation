@@ -10,7 +10,7 @@ Une arme devra avoir les attributs suivants
 
 ## Description d'un joueur
 Un joueur devra avoir les attributs suivants
-- `name` : le nom du joueur
+- `email` : l'email du joueur
 - `health` : la vie du joueur
 - `weapon` : l'arme équipée par le joueur
 - `position` : la position du joueur sur la carte en { x; y }
