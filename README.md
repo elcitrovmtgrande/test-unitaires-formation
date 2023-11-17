@@ -1,5 +1,7 @@
 ## Exercice de cas pratique sur les tests unitaires
 
+![Blockchain](./blockchain.png)
+
 ### Contexte
 Réalisation d'une blockchain en locale avec des tests unitaires.
 
