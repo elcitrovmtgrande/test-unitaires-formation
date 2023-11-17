@@ -16,3 +16,4 @@ describe('Player weapon', () => {
     expect(weapon.getAmmos()).toBe(12);
   });
 });
+

@@ -32,4 +32,16 @@ describe('Player', () => {
     const enemy = new Character('nico08@test.com', 100, weapon, { x: 300, y: 300 });
     expect(char.canShootAt(enemy)).toBe(false);
   });
+  it("should be able to shoot at another player", () => {
+    const enemy = new Character('nico04@test.com', 100, weapon, { x: 20, y: 10 });
+    expect(char.canShootAt(enemy)).toBe(true);
+    expect(char.getWeapon().getAmmos()).not.toBe(0);
+    expect(enemy.getHealthPoints()).not.toBe(0);
+
+  });
+
 });
+
+// 
+
+// doit vérifier que le user a bien des munitions l'adverser et a porté d'arme + a des hp 
