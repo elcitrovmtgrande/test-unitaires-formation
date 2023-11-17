@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "start:fps": "ts-node src/exercises/fps/index.ts",
     "dev": "nodemon -e '*' --exec 'ts-node src/index.ts'",
+    "dev:fps": "nodemon -e '*' --exec 'ts-node src/exercises/fps/index.ts'",
     "test": "jest",
     "test:watch": "jest --watch"
   },
