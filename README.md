@@ -18,7 +18,7 @@ Le hash est une empreinte numérique qui permet de vérifier l’intégrité du 
 Dans le cadre de cet exercice, nous utiliserons le protocole de hachage [SHA-256](https://www.npmjs.com/package/crypto-js).
 
 ### Tests unitaires
-Dans notre contexte, nous créeront deux classes, uen classe Block et une classe blockchain. La classe blockchain contiendra un tableau de blocs.
+Dans notre contexte, nous créeront deux classes, une classe Block et une classe Blockchain. La classe Blockchain contiendra un tableau de blocs.
 Nous effectueront des tests unitaires sur ces deux classes afin de vérifier leur conformité selon une approche TDD.
 
 La méthode permettant de miner un block doit être une méthode publique de la classe `Blockchain`.
