@@ -32,4 +32,9 @@ describe('Player', () => {
     const enemy = new Character('nico08@test.com', 100, weapon, { x: 300, y: 300 });
     expect(char.canShootAt(enemy)).toBe(false);
   });
+
+  it('should check if player can open fire', () => {
+    const enemy = new Character('enemy@test.com', 100, weapon, { x: 10, y: 10 });
+    expect(char.fire(enemy)).toBe(true);
+  })
 });

@@ -26,6 +26,11 @@ export class Character {
     return this._healthPoints;
   }
 
+  public setHealthPoints(healthPoints: number): Character {
+    this._healthPoints = healthPoints;
+    return this;
+  }
+
   public getWeapon(): Weapon {
     return this._weapon;
   }
@@ -38,6 +43,18 @@ export class Character {
     const distance = Math.sqrt(Math.pow(this._position.x - player.getPosition().x, 2) + Math.pow(this._position.y - player.getPosition().y, 2));
     const range = this.getWeapon().getRange();
     return distance < range;
+  }
+
+  public fire(player: Character): boolean {
+    const canShoot = this.canShootAt(player);
+    const hasAmmos = this.getWeapon().getAmmos() > 0;
+    const isAlive = player.getHealthPoints() > 0;
+
+    const hasFired = canShoot && hasAmmos && isAlive;
+
+    if(hasFired) player.setHealthPoints(player.getHealthPoints() - this.getWeapon().getDamages());
+    
+    return hasFired;
   }
 };
 
