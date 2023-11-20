@@ -39,6 +39,19 @@ export class Character {
     const range = this.getWeapon().getRange();
     return distance < range;
   }
-};
+
+  public fire(player: Character) {
+    if (this.canShootAt(player)) {
+      if (this._weapon.getAmmos() > 0 && player._healthPoints > 0) {
+        player._healthPoints - this._weapon.getDamages();
+        if (player._healthPoints <= 0) {
+          console.log("player is dead")
+        }
+      }
+    }
+  }
+}
+
+
 
 export default Character;
